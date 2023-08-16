@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500;600;800&family=Calistoga&family=Mitr:wght@300;400;500&family=Passion+One:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,100;1,300;1,400&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: linear-gradient(#F2cb05,#A6826D, #D94423 );*/
+    background: linear-gradient(120deg, #D37DFF, #F2C9E4, #D37DFF);
+}
+.conteiner{
+    width: 60%;
+    height: 70vh;
+    display: flex;
+    background: rgba(255, 255, 255, 0.389);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+    backdrop-filter: blur(45px);
+    border-radius: 1px 40px;
+    position: relative;
+}
+.texto{
+    width: 50%;
+    padding-top: 10%;
+}
+.texto h1{
+    margin: 40px;
+    font-size: 50px;
+    color: white;
+    font-family: 'Calistoga', cursive;
+    text-shadow: 5px 5px 5px #8c032753;
+}
+.texto p{
+    color: #4f4f4f;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img img{
+    width: 100%;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .conteiner{
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto h1{
+        width: 100%;
+    }
+    .texto p{
+        width: 100%;
+    }
+    .img{
+        width: 50%;
+        padding-top: 30px;
+    }
+    
+}
